@@ -1,0 +1,40 @@
+/* header hero styles */
+.container-hero {
+    background-color:#f7ede8 ;
+    padding: 1rem 8rem 2rem 8rem;
+
+
+&__about{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 12rem;
+    padding-top: 3rem;
+
+
+.title{
+font-size: 6rem;
+margin:0px;
+line-height: 6rem;
+
+}
+.title.primary {
+    color: var(--primary);
+}
+
+.description{
+    color: var(--davys-grey);
+    line-height: 1.5rem;
+}
+
+ .description{
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+ .btn{
+    margin-right: 1rem;
+}
+
+}
+
+}

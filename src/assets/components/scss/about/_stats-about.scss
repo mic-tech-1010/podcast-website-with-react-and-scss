@@ -1,0 +1,34 @@
+/* site stats styles */
+.stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    top: -7rem;
+
+&__cards{
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 14rem;
+    background-color: white;
+    margin-right: 2rem;
+    text-align: center;
+    box-shadow: 6px 6px 0px var(--primary);
+
+     .counter{
+        font-size: 3.8rem;
+        margin-bottom: 1.5rem;
+
+
+        .count{
+            color: var(--primary);
+            margin-right: -0.2rem;
+        }
+
+    }
+}
+
+
+
+}

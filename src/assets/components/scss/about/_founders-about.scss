@@ -1,0 +1,64 @@
+/* founder and main host */
+.founders{
+    padding: 3rem 10rem 8rem 10rem;
+
+    &__sectionTitle{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+&__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.founders-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 49%;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 0px black;
+    padding: 1rem;
+    box-sizing: border-box;
+
+}
+
+.founders-card > img {
+width: 48%;
+}
+
+.founder-info{
+    padding-left: 2rem;
+    margin-top: auto;
+}
+
+.founder-info .name{
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.founder-info .bio{
+    color: var(--davys-grey);
+    font-size: small;
+    }
+    .founder-info .socials{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .founder-info .socials img{
+        margin-left: 0.5rem;
+    }
+    .founder-info .socials strong{
+        margin-right: 0.2rem;
+        color: var(--davys-grey);
+        font-size: 0.9rem;
+    }
+}

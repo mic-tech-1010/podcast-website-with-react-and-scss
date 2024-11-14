@@ -1,0 +1,145 @@
+@use '../mixins' as m;
+
+.card-container {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr;
+    padding-inline: 1.25rem;
+
+    @media(min-width:55.25em) {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 4rem;
+        gap: 36px;
+  }
+
+  @media (min-width: 79.25em) {
+    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 4rem;
+    gap: 24px;
+  }
+
+}
+
+
+
+.card {
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.card:hover {
+    border: 3px outset var(--primary);
+    cursor: pointer;
+    opacity: 0.97;
+}
+
+.card:active{
+    box-shadow: none;
+}
+
+.ep-info{
+    display: flex;
+}
+
+.ep-info img{
+   width: 40%;
+
+    @media(min-width:55.25em) {
+        width: 50%;
+  }
+
+  @media (min-width: 79.25em) {
+    width: 100%;
+  }
+}
+
+.ep-info:hover img{
+    opacity: 0.97;
+}
+
+.ep-description {
+    padding-left: 1.5rem;
+    padding-top: 0.5rem;
+    line-height: 1.13rem
+}
+
+.ep-blurb{
+    font-size: 0.9rem;
+}
+
+.ep-description .ep-number {
+    color: var(--primary);
+    font-weight: bold;
+
+}
+
+.ep-description .ep-title{
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.ep-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.ep-tags .tag-names {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.ep-tags .tag-names span {
+    border: 1px solid var(--davys-grey);
+    padding: 0.5rem;
+    border-radius: 4px;
+    color: var(--davys-grey);
+    font-size: 0.65rem;
+}
+
+.ep-tags .host{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ep-tags .host .label{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.ep-tags .host img {
+    height: 2.5rem;
+    width: auto;
+}
+
+.ep-tags .host:hover  img{
+    opacity: 0.98;
+  -webkit-transform: translate3d(2px, 2px, 0) scale(1);
+  transform: translate3d(2px, 2px, 0) scale(1);
+}
+
+.card:nth-child(2n-1) {
+    box-shadow: 7px 7px 0px #81adc8;
+}
+
+.card:nth-child(2n) .ep-title {
+    color: var(--primary);
+}
+
+.card-batch {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: black;
+    padding: 2px 3px;
+    border-radius: 2px;
+    color: white;
+    font-size: 8px;
+}

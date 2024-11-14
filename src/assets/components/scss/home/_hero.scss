@@ -1,0 +1,129 @@
+/* hero container style */
+.hero-container {
+    background-color:#f7ede8 ;
+     padding: 1rem 8rem 2rem 8rem;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+.hero-img {
+    width: 40%;   
+}
+
+// .hero .img-2{
+//     box-shadow: 11.5px 11.5px 0px #81adc8;
+//     border: 0px solid white;
+//     border-radius: 22px;
+// }
+
+.hero-img:hover{
+    opacity: 0.95;  
+}
+
+.hero-info{
+    width: 50%;
+}
+
+.episode-title {
+    width: 90%;
+    border-bottom: 1px solid black;
+
+}
+
+.number-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 0.9rem;
+    align-items: center;
+}
+.number-container .featured{
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    padding: 4px;
+}
+.episode-description{
+    line-height: 2rem;
+}
+.metadata{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.metadata .author .avatar{
+    width:2.5rem;
+    height:auto;
+}
+.metadata .author .host-label{
+    margin-left: 1rem;
+}
+.metadata .author .host-name{
+    margin-left: 0.5rem;
+    color:var(--primary);
+    font-weight: bold;
+}
+.episode-actions{
+    display: flex;
+    flex-direction: row;
+}
+.episode-actions button{
+    margin-right: 1.5rem;
+
+}
+.episode-actions button.secondary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.btn.lg{
+    height: 4rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.episode-actions button.secondary span{
+    margin-left: 0.5rem;
+}
+.episode-actions button.secondary img{
+    margin-right: 0.5rem;
+}
+.episode-actions button.secondary .minute{
+    color:var(--primary);
+}
+button.btn:hover {
+    border: 2px solid var(--primary);
+}
+button.btn:active{
+    box-shadow: none;
+}
+.tags{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.tags .label {
+    margin-right: 4rem;
+}
+.tags .tag-name {
+    border:1px solid var(--davys-grey);
+    padding: 6px 12px 6px 12px;
+    color: var(--davys-grey);
+    }
+
+ .tag-name + .tag-name {
+    margin-left: 5px;
+ }   

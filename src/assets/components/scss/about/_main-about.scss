@@ -1,0 +1,41 @@
+/* main content syles */
+.history{
+    padding: 0rem 12rem 4rem 12rem;
+
+&__mainTitle{
+    font-size: 3.8rem;
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+&__subTitle{
+    font-size: 1.5rem;
+    color: var(--davys-grey);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.microphone{
+    width: 100%;
+    border-radius: 12px;
+}
+
+&__sectionTitle{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.column p{
+    width: 48%;
+    line-height: 1.5rem;
+}
+
+}

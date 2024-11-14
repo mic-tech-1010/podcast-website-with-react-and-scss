@@ -1,0 +1,58 @@
+.episodes{
+    padding: 6rem 8rem 4rem 8rem;
+}
+
+.episodes a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.episodes a:hover{
+    text-decoration:none;
+}
+
+.episode-list{
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 8rem;
+    justify-content: space-between;
+}
+
+.left-col .ep-container, .right-col .ep-container{
+    width: 490px;
+}
+
+.section{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.genre-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 6rem;
+    height: 4rem;
+    align-items: center;
+    border-bottom: 1px solid var(--davys-grey);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.genre-filter span {
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--davys-grey);
+}
+.genre-filter .active{
+    font-weight: bold;
+    color: var(--primary);
+}
+
+episode-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+
